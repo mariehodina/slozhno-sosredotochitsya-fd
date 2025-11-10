@@ -3,11 +3,13 @@
   и их переопределение под различные устройства
 */
 :root {
-   --background-image: url(../images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
   --accent-color: #FF0070;
   --color-title: #DB00FF;
-  --color-article: #000028;
+  --color-intro: #FF0070;
+  --accent-color-footer: #FF0070;
   --text-color: #F1B2CE;
+  --color-article: #000028;
 
 }

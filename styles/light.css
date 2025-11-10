@@ -14,9 +14,11 @@
 
 :root.theme-light {
   --background-image: url(../images/cover-image-light.png);
-  --background-color: #FF8DCB;
+  --background-color: #FFF1F7;
   --accent-color: #FF8DCB;
   --color-title: #FFC2E6;
+  --color-intro: #353430;
+  --accent-color-footer:#FF0070;
   --text-color: #353430;
   --color-article: #353430;
   /* сохраните этот селектор в приведённом виде.
