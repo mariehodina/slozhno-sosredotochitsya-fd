@@ -48,7 +48,7 @@ a {
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 2px solid #000;
+  border: 2px solid var(--color-intro);
 }
 
 .decorated-zone::before {
@@ -71,7 +71,7 @@ footer::before,
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 2px solid #000;
+  border: 2px solid var(--color-intro);
 }
 
 
