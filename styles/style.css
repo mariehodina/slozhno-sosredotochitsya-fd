@@ -16,7 +16,7 @@
 .header {
   display: grid;
   position: relative;
-  margin-bottom: 40px;
+  margin-block-start: 40px;
   grid-template-rows: 1fr auto 1fr;
   align-items: center;
   min-height: 100vb;
@@ -73,9 +73,9 @@
 
 .title__content {
   gap: 65px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
-  font-size: 116px; /*измени с помощью calc*/
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--color-title);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -90,12 +90,12 @@
 .content__intro {
   background-color: var(--accent-color);
   color: var(--color-article);
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--font-size);
   line-height: 23.4px;
   display: flex;
-  margin-inline-start: 10px;
+  margin-inline: 10px;
 }
 
 /*MAIN part*/
@@ -111,9 +111,9 @@
   justify-items: start;
   color: var(--color-intro);
   background-color: var(--background-color);
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: var(--font-family);
   font-style: bold;
-  font-size: 18px;
+  font-size: var(--font-size);
   line-height: 23.4px;
   width: 314.96px;
   padding: 40px 10px 20px 0px;
@@ -135,9 +135,9 @@
 
 .card__title {
   color: var(---color-article);
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: var(--font-family);
   font-style: bold;
-  font-size: 18px;
+  font-size: var(--font-size);
   line-height: 23.4px;
 }
 
@@ -148,23 +148,23 @@
 }
 
 .title-decor-reg {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--font-size);
   line-height: 23.4px;
 }
 
 .card_content {
   display: flex;
   flex-direction: column;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: var(--font-family);
 }
 
 .card__text {
   color: var(--text-color);
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--font-size);
   line-height: 23.4px;
   margin-inline-end: 25px;
 }
@@ -188,7 +188,7 @@
   flex-grow: 1;
 }
 
-/* */
+/*уголки*/
 
 .decorated-zone::before,
 .decorated-zone::after {
@@ -262,14 +262,14 @@ footer::before,
 .footer-name {
   color: var(--color-title);
   text-shadow: 2px 1px 0 var(--accent-color-footer);
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 116px;
   line-height: 83%;
   padding: 286px 13px;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   .page {
     min-height: 1024px;
   }
@@ -282,7 +282,7 @@ footer::before,
 
   .title__content {
     font-size: 120px;
-    min-width: 576.84px; /*измени потом с помощью сalc*/
+    min-width: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .content__intro {
     font-size: 18px;
@@ -362,4 +362,44 @@ footer::before,
   .question_text {
     padding-block-start: 0px;
   }
+}
+
+
+@media (width >= 1024px) {
+
+  .header {
+  margin-block-start: 10px;
+  align-items: start;
+  }
+
+  .header__theme-menu {
+  margin-block-start: 20px;
+  justify-self: center;
+}
+  .header__theme-menu-list {
+  flex-direction: row;
+  }
+
+  .title__content {
+  min-width: 759px;
+  padding-block-end: 114px;
+}
+
+.content__intro {
+  display: flex;
+  position: relative;
+  max-width: 491px;
+  max-height: 71px;
+  justify-self: end;  /*!!!!!!*/
+}
+
+.main_part_section:nth-child(2) {
+  display: grid;
+  grid-template-areas: "question_text", "article";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  }
+.footer-name {
+  font-size: 157px;
+}
 }

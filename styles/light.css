@@ -23,11 +23,11 @@
   */
 }
 
-.theme-light .rec-decor {
+/* .theme-light .rec-decor {
   display: none;
-}
+} */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --background-image: url(../images/cover-image-light.png);
     --background-color: #fff1f7;
@@ -42,4 +42,4 @@
   .theme-auto .rec-decor {
     display: none;
   }
-}
+} */
