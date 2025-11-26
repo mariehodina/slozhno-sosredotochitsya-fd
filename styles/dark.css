@@ -13,61 +13,11 @@
   --accent-color-footer: #ff0070;
   --text-color: #f1b2ce;
   --color-article: #000028;
+  --color-hover: #FF007066;
+  --font-size: 18px;
+  --font-family: 'IBM Plex Mono';
+   --font-weight-s: 400;
+  --font-weight-l: 700;
 }
 
-.rec-label {
-  position: absolute;
-  margin-block-start: 10px; /*PP*/
-  margin-inline-end: 19px;
-  gap: 5px;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: var(--color-intro);
-  font-family: "IBM Plex Mono", sans-serif;
-}
 
-.rec-label::after {
-  content: "";
-  display: inline-block;
-  background-color: #ff5252;
-  border-radius: 50%;
-}
-
-.theme-light .rec-label,
-body.light-theme .rec-label,
-[data-theme="light"] .rec-label {
-  display: none !important;
-}
-
-/* Показываем REC только в тёмной теме */
-.theme-dark .rec-label,
-body.dark-theme .rec-label,
-[data-theme="dark"] .rec-label {
-  display: flex;
-}
-
-body.light .rec-label {
-  display: none;
-}
-
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-  .rec-label {
-    top: 10px;
-    right: 10px;
-    font-size: 0.7rem;
-  }
-
-  .rec-label::after {
-    width: 6px;
-    height: 6px;
-  }
-}
-
-/* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */

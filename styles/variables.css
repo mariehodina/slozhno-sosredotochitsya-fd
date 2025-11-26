@@ -11,8 +11,10 @@
   --accent-color-footer: #FF0070;
   --text-color: #F1B2CE;
   --color-article: #000028;
+  --color-hover: #FF007066;
   --font-size: 18px;
-  --font-family: 'IBM Plex Mono', sans-serif;
-
+  --font-family: 'IBM Plex Mono';
+  --font-weight-s: 400;
+  --font-weight-l: 700;
 }
 
