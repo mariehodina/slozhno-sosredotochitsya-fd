@@ -5,7 +5,7 @@
   переключая тему
 */
 
-:root.theme-light {
+:root .theme-light {
   --background-image: url(../images/cover-image-light.png);
   --background-color: #fff1f7;
   --accent-color: #ff8dcb;
@@ -14,7 +14,7 @@
   --accent-color-footer: #ff0070;
   --text-color: #353430;
   --color-article: #353430;
-  --color-hover: #32312d66;
+  --color-hover: rgba(50, 49, 45, 0.4);
   --font-size: 18px;
   --font-family: "IBM Plex Mono";
   --font-weight-s: 400;
@@ -40,7 +40,7 @@
   --accent-color-footer: #ff0070;
   --text-color: #353430;
   --color-article: #353430;
-  --color-hover: #32312d66;
+  --color-hover: rgba(50, 49, 45, 0.4);
   --font-size: 18px;
   --font-family: "IBM Plex Mono";
   --font-weight-s: 400;
