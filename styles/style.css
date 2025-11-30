@@ -7,6 +7,7 @@
   background-color: var(--background-color);
   background-image: var(--background-image);
   min-height: 100vh;
+  min-inline-size: 375px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 

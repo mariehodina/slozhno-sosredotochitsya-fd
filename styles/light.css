@@ -32,14 +32,19 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-image: url(../images/cover-image-light.png);
-    --background-color: #fff1f7;
-    --accent-color: #ff8dcb;
-    --color-title: #ffc2e6;
-    --color-intro: #353430;
-    --accent-color-footer: #ff0070;
-    --text-color: #353430;
-    --color-article: #353430;
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --color-title: #ffc2e6;
+  --color-intro: #353430;
+  --accent-color-footer: #ff0070;
+  --text-color: #353430;
+  --color-article: #353430;
+  --color-hover: #32312d66;
+  --font-size: 18px;
+  --font-family: "IBM Plex Mono";
+  --font-weight-s: 400;
+  --font-weight-l: 700;
   }
 
   .theme-auto .rec-label {
