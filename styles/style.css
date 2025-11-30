@@ -253,7 +253,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 2px solid var(--color-intro);
+  border: 1px solid var(--color-intro);
 }
 
 .decorated-zone::before {
@@ -276,7 +276,7 @@ footer::before,
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 2px solid var(--color-intro);
+  border: 1px solid var(--color-intro);
 }
 
 .footer::before {
@@ -298,8 +298,7 @@ footer::before,
 .footer {
   position: relative;
   display: grid;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
   block-size: 100vh;
   min-block-size: 668px;
 }
