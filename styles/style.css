@@ -109,7 +109,6 @@
   color: var(--color-title);
   text-shadow: 4px 4px 0 var(--accent-color);
   background-position: center;
-  width: 355px;
   margin-inline-start: 10px;
   padding-block-start: 10px;
 }
