@@ -67,7 +67,6 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  border: none;
   line-height: 18px;
   padding: 1.5px 13px;
   color: var(--color-intro);
