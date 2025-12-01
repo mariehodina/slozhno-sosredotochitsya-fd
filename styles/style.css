@@ -66,7 +66,7 @@
 }
 
 .header__theme-menu-button {
-  background: transparent;
+  background-color: transparent;
   border: none;
   line-height: 18px;
   padding: 1.5px 13px;
@@ -203,19 +203,6 @@
 
 .title-decor-reg {
   font-weight: var(--font-weight-s);
-}
-
-.card__text {
-  display: block;
-  color: var(--text-color);
-  font-family: var(--font-family), monospace;
-  font-weight: var(--font-weight-s);
-  font-size: var(--font-size);
-  line-height: 23.4px;
-}
-
-.main_part_decor {
-  gap: 18px;
 }
 
 /*КАРТОЧКИ*/
@@ -449,10 +436,6 @@
     gap: 1px;
   }
 
-  .main_part_section_columns {
-    padding-inline-start: 7px;
-  }
-
   .question_text {
     max-width: 315px;
     width: 100%;
@@ -467,6 +450,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
+    padding-inline-start: 7px;
   }
 
   .main_part_section_columns .question_text {
