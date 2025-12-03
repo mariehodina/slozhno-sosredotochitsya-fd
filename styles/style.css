@@ -169,13 +169,13 @@
   gap: 10px;
 }
 
-.articles{
-display: flex;
+.articles {
+  display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.card_content{
+.card_content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -473,6 +473,4 @@ display: flex;
     grid-column: auto;
     grid-row: auto;
   }
-
-  
 }
