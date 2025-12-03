@@ -169,7 +169,13 @@
   gap: 10px;
 }
 
-.card {
+.articles{
+display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_content{
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -437,7 +443,6 @@
 
   .question_text {
     max-width: 315px;
-    width: 100%;
   }
 
   .card__text {
@@ -446,7 +451,6 @@
   }
 
   .main_part_section_columns {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
     padding-inline-start: 7px;
@@ -470,7 +474,5 @@
     grid-row: auto;
   }
 
-  .footer-name {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
+  
 }
